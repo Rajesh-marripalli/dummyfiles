@@ -1,0 +1,243 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "phone": "123-456-7890",
+      "address": "123 Main St, Anytown, USA"
+    },
+    {
+      "userId": 2,
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jane.doe@example.com",
+      "password": "password123",
+      "phone": "987-654-3210",
+      "address": "456 Elm St, Othertown, USA"
+    },
+    {
+      "userId": 3,
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "email": "alice.smith@example.com",
+      "password": "password456",
+      "phone": "555-666-7777",
+      "address": "789 Pine St, Anycity, USA"
+    },
+    {
+      "userId": 4,
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "email": "bob.johnson@example.com",
+      "password": "password789",
+      "phone": "111-222-3333",
+      "address": "321 Oak St, Sometown, USA"
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": 1,
+      "name": "Electronics"
+    },
+    {
+      "categoryId": 2,
+      "name": "Books"
+    },
+    {
+      "categoryId": 3,
+      "name": "Clothing"
+    }
+  ],
+  "products": [
+    {
+      "productId": 1,
+      "name": "Smartphone",
+      "description": "Latest model smartphone with advanced features.",
+      "price": 699.99,
+      "discount": 50.00,
+      "stock": 100,
+      "categoryId": 1
+    },
+    {
+      "productId": 2,
+      "name": "Laptop",
+      "description": "High-performance laptop for all your needs.",
+      "price": 1299.99,
+      "discount": 100.00,
+      "stock": 50,
+      "categoryId": 1
+    },
+    {
+      "productId": 3,
+      "name": "E-Book Reader",
+      "description": "Portable e-book reader with a high-resolution display.",
+      "price": 199.99,
+      "discount": 20.00,
+      "stock": 200,
+      "categoryId": 1
+    },
+    {
+      "productId": 4,
+      "name": "Novel",
+      "description": "A bestselling novel with thrilling story.",
+      "price": 9.99,
+      "discount": 1.00,
+      "stock": 500,
+      "categoryId": 2
+    },
+    {
+      "productId": 5,
+      "name": "T-Shirt",
+      "description": "Comfortable cotton t-shirt available in multiple sizes.",
+      "price": 19.99,
+      "discount": 2.00,
+      "stock": 300,
+      "categoryId": 3
+    }
+  ],
+  "orders": [
+    {
+      "orderId": 1,
+      "orderDate": "2023-07-01",
+      "status": "Shipped",
+      "userId": 1,
+      "shipmentId": 1
+    },
+    {
+      "orderId": 2,
+      "orderDate": "2023-07-02",
+      "status": "Processing",
+      "userId": 2,
+      "shipmentId": 2
+    },
+    {
+      "orderId": 3,
+      "orderDate": "2023-07-03",
+      "status": "Delivered",
+      "userId": 3,
+      "shipmentId": 3
+    },
+    {
+      "orderId": 4,
+      "orderDate": "2023-07-04",
+      "status": "Cancelled",
+      "userId": 4,
+      "shipmentId": 4
+    }
+  ],
+  "shipments": [
+    {
+      "shipmentId": 1,
+      "shipmentStatus": "Delivered",
+      "method": "Standard",
+      "totalPrice": 699.99,
+      "shippingDate": "2023-07-03"
+    },
+    {
+      "shipmentId": 2,
+      "shipmentStatus": "In Transit",
+      "method": "Express",
+      "totalPrice": 1299.99,
+      "shippingDate": "2023-07-04"
+    },
+    {
+      "shipmentId": 3,
+      "shipmentStatus": "Delivered",
+      "method": "Standard",
+      "totalPrice": 199.99,
+      "shippingDate": "2023-07-05"
+    },
+    {
+      "shipmentId": 4,
+      "shipmentStatus": "Cancelled",
+      "method": "Express",
+      "totalPrice": 0.00,
+      "shippingDate": null
+    }
+  ],
+  "reviews": [
+    {
+      "reviewId": 1,
+      "rating": 5,
+      "comment": "Excellent product!",
+      "reviewDate": "2023-07-05",
+      "productId": 1,
+      "userId": 1
+    },
+    {
+      "reviewId": 2,
+      "rating": 4,
+      "comment": "Very good quality.",
+      "reviewDate": "2023-07-06",
+      "productId": 2,
+      "userId": 2
+    },
+    {
+      "reviewId": 3,
+      "rating": 3,
+      "comment": "Average performance.",
+      "reviewDate": "2023-07-07",
+      "productId": 3,
+      "userId": 3
+    },
+    {
+      "reviewId": 4,
+      "rating": 2,
+      "comment": "Not as expected.",
+      "reviewDate": "2023-07-08",
+      "productId": 4,
+      "userId": 4
+    }
+  ],
+  "rates": [
+    {
+      "rateId": 1,
+      "publishedDate": "2023-07-05",
+      "publishedTime": "10:00:00",
+      "reviewId": 1
+    },
+    {
+      "rateId": 2,
+      "publishedDate": "2023-07-06",
+      "publishedTime": "11:00:00",
+      "reviewId": 2
+    },
+    {
+      "rateId": 3,
+      "publishedDate": "2023-07-07",
+      "publishedTime": "12:00:00",
+      "reviewId": 3
+    },
+    {
+      "rateId": 4,
+      "publishedDate": "2023-07-08",
+      "publishedTime": "13:00:00",
+      "reviewId": 4
+    }
+  ],
+  "orderProducts": [
+    {
+      "orderId": 1,
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "orderId": 2,
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "orderId": 3,
+      "productId": 3,
+      "quantity": 1
+    },
+    {
+      "orderId": 4,
+      "productId": 4,
+      "quantity": 1
+    }
+  ]
+}
